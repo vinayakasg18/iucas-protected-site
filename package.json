@@ -1,0 +1,21 @@
+{
+  "name": "a2agc-dataset",
+  "version": "0.0.1",
+  "description": "",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "start": "node ./server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "express-session": "^1.16.2",
+    "morgan": "^1.9.1",
+    "passport": "^0.4.0",
+    "passport-iucas": "0.0.1"
+  }
+}
