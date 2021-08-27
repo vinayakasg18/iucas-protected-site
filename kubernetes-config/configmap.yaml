@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: cns-configmap
+data:
+  LISTEN_ADDR: localhost
+  SESSION_SECRET: Y293LWFidW5nYSBkMDBk
+  LOGGER: common
+  USERS: 'bherr gallantm katy vgadag'

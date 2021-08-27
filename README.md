@@ -20,3 +20,13 @@ Either run `npm start` or `./server.js`. The server normally checks for a `.env`
 
 * <https://github.com/soichih/passport-iucas>
 * <https://github.iu.edu/UITS-IMS/CasIntegrationExamples/blob/master/nodejs-express-passport.js>
+
+
+## Run the application using docker
+Run the docker using below command.
+
+`docker run -it -p 8080:8080 vinayakasgadag/cns:iucas01`
+
+## Architecture
+Below is the architecure of the appication on how it is deployed to Kubernetes and accessible.
+![Architecture](site/architecture.png)

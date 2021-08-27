@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: iucas-deployment
+  labels:
+    app: cns-iucas
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cns-iucas
+  template:
+    metadata:
+      labels:
+        app: cns-iucas
+    spec:
+      containers:
+      - name: cns-iucas
+        image: vinayakasgadag/cns:iucas01
+        ports:
+        - containerPort: 8080
+        env:
+          - name: SESSION_SECRET
+            valueFrom:
+              configMapKeyRef:
+                name: configmap
+                key: SESSION_SECRET
